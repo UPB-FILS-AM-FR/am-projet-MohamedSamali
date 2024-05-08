@@ -17,7 +17,7 @@ Line follower robots are a popular project for hobbyists and educators because t
 
 ### Schematic
 
-![Schematic](schematics/kicad_schematic.png)
+![Schematic](schematics/schema.png)
 
 ### Components
 
