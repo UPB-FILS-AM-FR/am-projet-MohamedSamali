@@ -1,11 +1,11 @@
 # Your Project Name
-
+Suiveur de ligne
 | | |
 |-|-|
 |`Author` | Your full name
 
 ## Description
-
+Ce robot suit une ligne noire tracée sur un fond blanc à l'aide de capteurs de ligne. 
 ## Motivation
 
 ## Architecture
