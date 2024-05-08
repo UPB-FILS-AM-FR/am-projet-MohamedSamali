@@ -1,13 +1,13 @@
-# Suiveur de ligne
+# Line Follower Robot
 
 | | |
 |-|-|
 |`Author` | Samali Mohamed
 
 ## Description
-Ce robot suit une ligne noire tracée sur un fond blanc à l'aide de capteurs de ligne. 
+This robot follows a black line drawn on a white background using line sensors.
 ## Motivation
-
+Line follower robots are a popular project for hobbyists and educators because they are relatively easy to build and program. They are also a good way to learn about the basics of robotics.
 ## Architecture
 
 ### Block diagram
