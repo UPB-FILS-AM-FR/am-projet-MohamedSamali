@@ -9,7 +9,11 @@ This robot follows a black line drawn on a white background using line sensors.
 ## Motivation
 Line follower robots are a popular project for hobbyists and educators because they are relatively easy to build and program. They are also a good way to learn about the basics of robotics.
 ## Architecture
+The basic architecture of a line follower robot is as follows:
 
+- Sensors: The robot uses sensors to detect the black line. The most common type of sensor for this application is an infrared (IR) sensor. IR sensors emit infrared light and then measure the amount of light that is reflected back from the surface. The robot can use this information to determine whether it is on the line or not.
+- Motors: The robot uses motors to move itself around. The most common type of motor for this application is a DC motor. DC motors can be controlled by a microcontroller to rotate at a specific speed and direction.
+- Microcontroller: The microcontroller is the brain of the robot. It takes the sensor data and uses it to control the motors. The microcontroller can also be programmed to perform other tasks, such as following a more complex path or avoiding obstacles.
 ### Block diagram
 
 <!-- Make sure the path to the picture is correct -->
@@ -26,10 +30,14 @@ Line follower robots are a popular project for hobbyists and educators because t
 
 | Device | Usage | Price |
 |--------|--------|-------|
-| Activ Buzzer | Buzzer | [1.5 RON](https://www.optimusdigital.ro/ro/audio-buzzere/635-buzzer-activ-de-3-v.html?search_query=buzzer&results=61) |
-| Push Button | Button | [1 RON](https://www.optimusdigital.ro/ro/butoane-i-comutatoare/1119-buton-6x6x6.html?search_query=buton&results=222) |
-| Jumper Wires | Connecting components | [7 RON](https://www.optimusdigital.ro/ro/fire-fire-mufate/884-set-fire-tata-tata-40p-10-cm.html?search_query=set+fire&results=110) |
+| Arduino Uno | This is a popular microcontroller board that is easy to use and affordable | [45 RON](https://www.robofun.ro/arduino-uno-r3-atmega328p-placa-de-dezvoltare-compatibila-cu-arduino-cablu-usb.html?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS39-6_K5sSRKYcg_SPstpWJF-VHPIrO_BW8yhji8hq6laCEcAWCI_hUaAghQEALw_wcB) |
+| IR sensors |  These are the sensors that the robot uses to detect the black line | [4.75 RON](https://www.sigmanortec.ro/Senzor-obstacol-IR-p125423458?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3-emMlUDBW4Tsj-zjQB8fpcg8ZEGDBcuoYug8dfnASn37PzN-THA3gaAhY1EALw_wcB) |
+| DC motors | These are the motors that the robot uses to move itself around| [4 RON](https://www.sigmanortec.ro/Motor-DC-3-6V-p125923622?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3_MRiGK3Vy4MUoFEFl_jzJZ0arUwMk4PF2zh3segV32v5IYmlGnJMoaAsyLEALw_wcB) |
 | Breadboard | Project board | [10 RON](https://www.optimusdigital.ro/ro/prototipare-breadboard-uri/8-breadboard-830-points.html?search_query=breadboard&results=145) |
+| Chassis | This is the frame that holds all of the components of the robot together | [48 RON](https://www.sigmanortec.ro/Kit-Sasiu-Smart-Car-2WD-p141489122?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3-8X_k8Drn6ozoLtjq7_fZtoQWAezQazTo7GzfnXuA8EFM_ZEdmcW0aApqoEALw_wcB) |
+| Battery |  This is the power source for the robot | [6 RON](https://www.emag.ro/search/9v+rechargeable+battery) |
+| L298N motor driver | This is a motor driver that allows the Arduino to control two DC motors | [11.5 RON](https://ardushop.ro/ro/electronica/84-l298n-punte-h-dubla-dual-h-bridge-motor-dcsteppe.html?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3_a9xAjqR7axeDUlBj5J8NyneQJxdy6NtBsUyJTD9O3Izl7jPZoq3IaAvBsEALw_wcB) |
+| Wheels | These are the wheels that the robot uses to roll around 
 
 ### Libraries
 
