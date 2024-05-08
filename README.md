@@ -2,7 +2,7 @@
 
 | | |
 |-|-|
-|`Author` | Your full name
+|`Author` | Samali Mohamed
 
 ## Description
 Ce robot suit une ligne noire tracée sur un fond blanc à l'aide de capteurs de ligne. 
