@@ -36,7 +36,7 @@ The basic architecture of a line follower robot is as follows:
 | Breadboard | Project board | [10 RON](https://www.optimusdigital.ro/ro/prototipare-breadboard-uri/8-breadboard-830-points.html?search_query=breadboard&results=145) |
 | Chassis | This is the frame that holds all of the components of the robot together | [48 RON](https://www.sigmanortec.ro/Kit-Sasiu-Smart-Car-2WD-p141489122?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3-8X_k8Drn6ozoLtjq7_fZtoQWAezQazTo7GzfnXuA8EFM_ZEdmcW0aApqoEALw_wcB) |
 | Battery |  This is the power source for the robot | [6 RON](https://www.emag.ro/search/9v+rechargeable+battery) |
-| L298N motor driver | This is a motor driver that allows the Arduino to control two DC motors | [11.5 RON](https://ardushop.ro/ro/electronica/84-l298n-punte-h-dubla-dual-h-bridge-motor-dcsteppe.html?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3_a9xAjqR7axeDUlBj5J8NyneQJxdy6NtBsUyJTD9O3Izl7jPZoq3IaAvBsEALw_wcB) |
+| L293D motor driver | This is a motor driver that allows the Arduino to control two DC motors | [11.5 RON](https://ardushop.ro/ro/electronica/84-l298n-punte-h-dubla-dual-h-bridge-motor-dcsteppe.html?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3_a9xAjqR7axeDUlBj5J8NyneQJxdy6NtBsUyJTD9O3Izl7jPZoq3IaAvBsEALw_wcB) |
 | Wheels | These are the wheels that the robot uses to roll around 
 
 ### Libraries
