@@ -21,7 +21,7 @@ The basic architecture of a line follower robot is as follows:
 
 ### Schematic
 
-![Schematic](schematics/schema.png)
+![Schematic](schematics/arduino.png)
 
 ### Components
 
