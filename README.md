@@ -17,7 +17,7 @@ The basic architecture of a line follower robot is as follows:
 ### Block diagram
 
 <!-- Make sure the path to the picture is correct -->
-![Block Diagram](Drawing.png)
+![Block Diagram](Drawing (1).png)
 
 ### Schematic
 
