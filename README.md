@@ -65,6 +65,6 @@ The basic architecture of a line follower robot is as follows:
 
 [line follower youtube](https://www.youtube.com/watch?v=PyKAanh_f30&t=149s)
 
-[Article 1](https://www.explainthatstuff.com/induction-motors.html)
+[arduino first steps](https://docs.google.com/presentation/d/1qULKmM0Kq6cZa7x-eMEmHzLIbyFpxmK0MEtjfW1qjjA/edit)
 
 
