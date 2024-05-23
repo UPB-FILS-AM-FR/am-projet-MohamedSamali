@@ -1,0 +1,101 @@
+// HEDHOM INET MTAAA SENS MTAA MOTEUR BECH TAAREF KIFEH IDAWER MOTOUR FI ANA SENS 
+#define in1 9
+#define in2 6
+#define in3 5
+#define in4 3
+// HEDHOM ENABLE MTAA VITESS MTAA MOTOURAT ELI MBAAD CHTAATEHOM VITESSE BIN 0 W 255 FEL FONCTION AVANT W GAUCHE W DROITE 
+#define vL 10
+#define vR 14
+#define milieu 12
+#define gauche 13
+#define droite 11
+
+void setup() {
+    Serial.begin(9600);
+  //HEDHOM CHNOUWA MODE MTAA OUTPUT W INPUT MTAAEK KIMA CAPTEURET BECH YABAATHOU SIGNALE LEL CARTE DONC INPUT 
+pinMode(in1,OUTPUT);
+pinMode(in2,OUTPUT);
+pinMode(in3,OUTPUT);
+pinMode(in4,OUTPUT);
+pinMode(vR,OUTPUT);
+pinMode(vL,OUTPUT);
+pinMode(milieu,INPUT);
+pinMode(gauche,INPUT);
+pinMode(droite,INPUT);
+
+
+// HEHDOM FONCTION TJAREBHOM WAHADHOM MELOUWEL KOL FONCTION WAHADHA W TBADEL IN1 2 3 4 KOL MARRA BEXH YEMXHI FARD SENS FEL AVANT MATHALIN W FI LOKHRIN MAKLOUBIN EL GAUCHE W DROITE 
+}
+void avant ()
+{analogWrite(vR,100);
+analogWrite(vL,100);
+digitalWrite(in1,0);
+digitalWrite(in2,1);
+digitalWrite(in3,1);
+digitalWrite(in4,0);
+}
+void droiteE()
+{
+analogWrite(vR,100);
+analogWrite(vL,100);  
+digitalWrite(in1,0);
+digitalWrite(in2,1);
+digitalWrite(in3,0);
+digitalWrite(in4,1);
+}
+void gaucheE ()
+{
+analogWrite(vR,100);
+analogWrite(vL,100);
+digitalWrite(in1,1);
+digitalWrite(in2,0);
+digitalWrite(in3,1);
+digitalWrite(in4,0);
+}
+void stopE ()
+{
+analogWrite(vR,0);
+analogWrite(vL,0);
+digitalWrite(in1,0);
+digitalWrite(in2,1);
+digitalWrite(in3,1);
+digitalWrite(in4,0);
+}
+void loop() {
+// HEDHOM CHTAKRA BEHOM VALEURET MTAA CAPTEUR 
+int mil=digitalRead(milieu);
+int gauch=digitalRead(gauche);
+int droi=digitalRead(droite);
+
+Serial.print(gauch);
+Serial.print(mil);
+Serial.println(droi);
+
+// HEDHOM LES CONDITION HASB VALEUR MTAAA CAPTEURET BECH YEMCHI ROBOT MATHALIN FEL LOULA CAPTEUR MILEU YEKHOU 1 fel noire w lokhrin 0 gauche w droite yemchi avant ytaaba ligne noire 
+if(( mil == 1 && gauch == 0 && droi == 0)||(mil==0 && gauch==1 && droi==1)) 
+avant();
+
+else if(( mil == 0 && gauch == 1 && droi == 0)||(mil==1 && gauch==0 && droi==1)) {
+gaucheE();
+delay (150);
+}
+ 
+else if(( mil == 0 && gauch == 0 && droi == 1)||(mil==1 && gauch==1 && droi==0)){ 
+droiteE();
+delay (100);
+
+}
+ 
+else if (( mil == 1 && gauch == 1 && droi == 1) ||(mil==0 && gauch==0 && droi==0))
+avant();
+ 
+else if (( mil == 1 && gauch == 1 && droi == 0) || (mil==0 && gauch==0 && droi==1))
+{
+  gaucheE();
+   
+}
+else if(( mil == 1 && gauch == 0 && droi == 1)||(mil==0 && gauch==1 && droi==0)){
+ droiteE();
+
+ }
+}
