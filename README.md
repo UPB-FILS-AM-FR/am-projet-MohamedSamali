@@ -44,8 +44,8 @@ The basic architecture of a line follower robot is as follows:
 
 | Library | Description | Usage |
 |---------|-------------|-------|
-| [lib-name1](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
-| [lib-name2](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
+| [L293D](https://github.com/tylersweat/arduino-L293D) | Arduino library for using a L293D motor controller chip | The L293D is a dual H-bridge IC that is used to control the robot's motors. It receives signals from the Arduino Uno and converts them into currents that turn the motors.  |
+
 
 ## Log
 
