@@ -52,11 +52,11 @@ The basic architecture of a line follower robot is as follows:
 <!-- write every week your progress here -->
 
 ### Week 6 - 12 May
-
+creation of the documentation on github
 ### Week 7 - 19 May
-
+purchase of components and start of assembly
 ### Week 20 - 26 May
-
+continuation of work on the assembly part with the last tasks and the finishing of the software part
 
 ## Reference links
 
