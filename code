@@ -5,10 +5,10 @@
 #define in4 3
 // HEDHOM ENABLE MTAA VITESS MTAA MOTOURAT ELI MBAAD CHTAATEHOM VITESSE BIN 0 W 255 FEL FONCTION AVANT W GAUCHE W DROITE 
 #define vL 10
-#define vR 14
+#define vR 11
 #define milieu 12
 #define gauche 13
-#define droite 11
+#define droite 8
 
 void setup() {
     Serial.begin(9600);
@@ -27,8 +27,8 @@ pinMode(droite,INPUT);
 // HEHDOM FONCTION TJAREBHOM WAHADHOM MELOUWEL KOL FONCTION WAHADHA W TBADEL IN1 2 3 4 KOL MARRA BEXH YEMXHI FARD SENS FEL AVANT MATHALIN W FI LOKHRIN MAKLOUBIN EL GAUCHE W DROITE 
 }
 void avant ()
-{analogWrite(vR,100);
-analogWrite(vL,100);
+{analogWrite(vR,255);
+analogWrite(vL,255);
 digitalWrite(in1,0);
 digitalWrite(in2,1);
 digitalWrite(in3,1);
@@ -36,8 +36,8 @@ digitalWrite(in4,0);
 }
 void droiteE()
 {
-analogWrite(vR,100);
-analogWrite(vL,100);  
+analogWrite(vR,255);
+analogWrite(vL,255);  
 digitalWrite(in1,0);
 digitalWrite(in2,1);
 digitalWrite(in3,0);
@@ -45,8 +45,8 @@ digitalWrite(in4,1);
 }
 void gaucheE ()
 {
-analogWrite(vR,100);
-analogWrite(vL,100);
+analogWrite(vR,255);
+analogWrite(vL,255);
 digitalWrite(in1,1);
 digitalWrite(in2,0);
 digitalWrite(in3,1);
@@ -77,12 +77,12 @@ avant();
 
 else if(( mil == 0 && gauch == 1 && droi == 0)||(mil==1 && gauch==0 && droi==1)) {
 gaucheE();
-delay (150);
+
 }
  
 else if(( mil == 0 && gauch == 0 && droi == 1)||(mil==1 && gauch==1 && droi==0)){ 
 droiteE();
-delay (100);
+
 
 }
  
@@ -92,10 +92,9 @@ avant();
 else if (( mil == 1 && gauch == 1 && droi == 0) || (mil==0 && gauch==0 && droi==1))
 {
   gaucheE();
-   
+  
 }
 else if(( mil == 1 && gauch == 0 && droi == 1)||(mil==0 && gauch==1 && droi==0)){
  droiteE();
 
- }
-}
+ }}
