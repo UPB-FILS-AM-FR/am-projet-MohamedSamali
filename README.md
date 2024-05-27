@@ -37,6 +37,7 @@ The basic architecture of a line follower robot is as follows:
 | Battery |  This is the power source for the robot | [6 RON](https://www.emag.ro/search/9v+rechargeable+battery) |
 | L293D motor driver | This is a motor driver that allows the Arduino to control two DC motors | [11.5 RON](https://ardushop.ro/ro/electronica/84-l298n-punte-h-dubla-dual-h-bridge-motor-dcsteppe.html?gad_source=1&gclid=Cj0KCQjwxeyxBhC7ARIsAC7dS3_a9xAjqR7axeDUlBj5J8NyneQJxdy6NtBsUyJTD9O3Izl7jPZoq3IaAvBsEALw_wcB) |
 | Wheels | These are the wheels that the robot uses to roll around 
+| Polo Holder with Plastic Ball (3/4'' diameter) | it helps the robot to move | [29 ron](https://www.optimusdigital.ro/ro/istoric-comenzi) |
 
 ### Libraries
 
